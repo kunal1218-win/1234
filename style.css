@@ -1,0 +1,148 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background:#000;
+  color:#fff;
+  font-family:Arial, sans-serif;
+  overflow:hidden;
+}
+.page{
+  display:none;
+  width:100%;
+  height:100vh;
+  position:relative;
+}
+.page.active{display:block}
+
+/* PANDA */
+.panda{
+  width:180px;
+  height:180px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.face{
+  width:180px;
+  height:160px;
+  background:white;
+  border-radius:50%;
+  position:relative;
+}
+.eye{
+  width:30px;
+  height:30px;
+  background:black;
+  border-radius:50%;
+  position:absolute;
+  top:60px;
+  animation:blink 4s infinite;
+}
+.eye.left{left:45px}
+.eye.right{right:45px}
+.ear{
+  width:60px;
+  height:60px;
+  background:black;
+  border-radius:50%;
+  position:absolute;
+  top:-20px;
+}
+.ear.left{left:-20px}
+.ear.right{right:-20px}
+
+@keyframes blink{
+  0%,90%,100%{transform:scaleY(1)}
+  95%{transform:scaleY(0.1)}
+}
+
+/* LYRICS */
+.stars{
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at top,#1a002a,#000);
+}
+#lyricsText{
+  position:relative;
+  top:25%;
+  width:90%;
+  margin:auto;
+  font-size:20px;
+  line-height:1.7;
+  white-space:pre-line;
+}
+
+/* IMAGE PAGE */
+#imageBox img{
+  max-width:85%;
+  max-height:80vh;
+  border-radius:20px;
+  cursor:pointer;
+}
+.nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:40px;
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+.nav.left{left:15px}
+.nav.right{right:15px}
+
+/* FULLSCREEN */
+#fullScreen{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:black;
+  justify-content:center;
+  align-items:center;
+  z-index:10;
+}
+#fullScreen img{
+  max-width:90%;
+  max-height:90%;
+}
+#closeFull{
+  position:absolute;
+  top:20px;
+  right:25px;
+  font-size:30px;
+  cursor:pointer;
+}
+
+/* FINAL PAGE */
+.finalStars{
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at top,#1a002a,#000);
+}
+#finalPage h1{
+  text-align:center;
+  margin-top:15vh;
+}
+#finalText{
+  text-align:center;
+  margin:30px auto;
+  width:85%;
+  font-size:18px;
+  line-height:1.7;
+}
+.blessing{
+  text-align:center;
+  margin-top:20px;
+}
+.signature{
+  position:absolute;
+  bottom:20px;
+  right:25px;
+  font-style:italic;
+  opacity:.7;
+}

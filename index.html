@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Azmary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 0 : PANDA -->
+<section class="page active" id="pandaPage">
+  <div class="panda">
+    <div class="ear left"></div>
+    <div class="ear right"></div>
+    <div class="face">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 1 : LYRICS -->
+<section class="page" id="lyricsPage">
+  <div class="stars"></div>
+  <pre id="lyricsText"></pre>
+  <audio id="lyricsSong" src="audio/lyrics-song.mp3"></audio>
+</section>
+
+<!-- PAGE 2 : IMAGES -->
+<section class="page" id="imagesPage">
+  <button class="nav left" id="prevImg">&#10094;</button>
+  <div id="imageBox"></div>
+  <button class="nav right" id="nextImg">&#10095;</button>
+</section>
+
+<!-- FULLSCREEN IMAGE -->
+<div id="fullScreen">
+  <span id="closeFull">✖</span>
+  <img id="fullImg">
+</div>
+
+<!-- PAGE 3 : VIDEOS -->
+<section class="page" id="videosPage">
+  <button class="nav left" id="prevVid">&#10094;</button>
+  <div id="videoBox"></div>
+  <button class="nav right" id="nextVid">&#10095;</button>
+</section>
+
+<!-- PAGE 4 : FINAL -->
+<section class="page" id="finalPage">
+  <div class="finalStars"></div>
+  <h1>Happy Birthday Azmary 💖</h1>
+
+  <div id="finalText"></div>
+
+  <p class="blessing">
+    May Allah and God always protect your smile<br>
+    and fill your life with love and peace
+  </p>
+
+  <div class="signature">— From Kunal</div>
+
+  <audio id="bgSong" src="audio/background.mp3" loop></audio>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
